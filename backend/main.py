@@ -9,13 +9,13 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:5173",
-        "https://*.vercel.app",
+        "https://car-price-predictor-api-1moy.onrender.com",
+        "https://car-price-predictor.vercel.app",  # ← we'll update after Vercel
     ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
 @app.get("/")
 def root():
     return {"status": "Car Price Predictor API is running"}
