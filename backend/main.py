@@ -8,10 +8,9 @@ app = FastAPI(title="Car Price Predictor API")
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "http://localhost:5173",
-        "https://car-price-predictor-api-1moy.onrender.com",
-        "https://car-price-predictor.vercel.app",  # ← we'll update after Vercel
-    ],
+    "http://localhost:5173",
+    "https://car-price-predictor-ten.vercel.app",
+],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
